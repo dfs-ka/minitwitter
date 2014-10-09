@@ -14,7 +14,7 @@ class IndexController extends Controller
 		$error = array();
 		if(isset($_POST['send'])) {
 			if(strlen($msg) <= 0 || strlen($msg) > 200) {
-				$error[] = 'Incorrect message length';
+				$error[] = 'Incorrect message length ('.strlen($msg).'/200)';
 			} else {
 				$post = new Post();
 				$post->user_id = $this->user->id;
@@ -155,6 +155,18 @@ class IndexController extends Controller
 					
 					$this->redirect(Yii::app()->homeUrl);
 				}
+			} else {
+				$temp = array();
+				foreach($error as $e) {
+					if(is_array($e)) {
+						foreach($e as $v) {
+							$temp[] = $v;
+						}
+					} else {
+						$temp[] = $e;
+					}
+				}
+				$error = $temp;
 			}
 		}
 		
