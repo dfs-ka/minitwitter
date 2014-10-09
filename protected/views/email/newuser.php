@@ -1,0 +1,1 @@
+<div><?php echo $username ?> has joined MiniTwitter</div>
