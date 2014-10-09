@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: Helvetica, Arial, Tahoma;
+	line-height: 120%;
+}
+html {
+	height: 100%;
+}
+body {
+	color: #606365;
+	background: #f4f4f4;
+	height: 100%;
+	font-size: 12px;
+	text-align: justify;
+}
+ol, ul {
+	list-style: none;
+	list-style-position: inside;
+}
+table {
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+strong, b {
+  font-weight: bold;
+}
+p {
+	line-height: 150%;
+	font-size: 14px;
+}
+em {
+	font-style: italic;
+}
+input, textarea, select {
+	font-family: Helvetica, Arial, Tahoma;
+}
+input[type="text"],
+input[type="password"] {
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+input[type="submit"] {
+	cursor: pointer;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+}
+input[type="submit"]:hover {
+	background: #f4f4f4;
+	color: rgb(0, 132, 180);
+}
+textarea:focus, input:focus, select:focus {
+	outline: none;
+}
+/* Text styles */
+h1, h2 {
+	font-size: 1.5em;
+	line-height: 150%;
+	text-transform: uppercase;
+	text-align: left;
+}
+a, a:visited, a:active, a:link {
+	color: #43a7e7;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.header {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	background: #fff;
+	height: 46px;
+	position: relative;
+	width: 100%;
+}
+.prefooter {
+	height: 42px;
+	width: 100%;
+}
+.footer {
+	margin-top: -42px;
+	height: 42px;
+	position: relative;
+}
+.copy {
+	float: right;
+	line-height: 42px;
+	color: #818386;
+	font-size: 12px;
+}
+#site {
+	min-height: 100%;
+}
+#page {
+	position: relative;
+	margin-top: 20px;
+}
+#mainmenu {
+	position: absolute;
+	top: 16px;
+	left: 0px;
+}
+#mainmenu li {
+	display: inline-block;
+	margin: 0px 25px 0px 0px;
+}
+#mainmenu li a {
+	font-size: 13px;
+	text-decoration: none;
+	color: rgb(102, 117, 127);
+}
+#mainmenu li:hover a {
+	color: rgb(0, 132, 180);
+}
+.container {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+/* Main page
+---------- */
+textarea.newpost {
+	width: 590px;
+	padding: 5px;
+	resize: none;
+	border-radius: 6px;
+}
+.post {
+	margin-bottom: 20px;
+	width: 580px;
+	padding: 5px 10px;
+	background: #fff;
+	border-radius: 6px;
+	border: 1px solid rgb(169, 169, 169);
+}
+.post-header  {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+.post-header div {
+	display: inline-block;
+	font-size: 11px;
+}
+.post-control {
+	float: right;
+}
+.post-edit, 
+.post-delete {
+	cursor: pointer;
+}
+.post-edit:hover {
+	color: #00cc00;
+}
+.post-delete:hover {
+	color: #ff0000;
+}
+.post-edit-msg {
+	display: none;
+}
+.post-edit-msg textarea {
+	width: 100%;
+	resize: none;
+}
+.post-edit-msg-confirm,
+.post-edit-msg-cancel {
+	display: inline-block;
+	font-size: 11px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.post-edit-msg-confirm:hover {
+	color: #00cc00;
+}
+.post-edit-msg-cancel:hover {
+	color: #ff0000;
+}
