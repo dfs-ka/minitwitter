@@ -20,6 +20,7 @@ INSTALLATION
 3. Change database params in config: /protected/config/main.php
 4. Change admin e-mail: /protected/components/Controller.php
 5. Import db.sql to your database
+6. Test string
 
 
 DEMO
